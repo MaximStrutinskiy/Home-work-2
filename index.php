@@ -13,3 +13,21 @@ printf("Now: %s", Carbon::now());
 echo "<br/><br/>";
 
 
+//Faker - show random data
+echo "<h2>Faker - show random data</h2>";
+$faker = Faker\Factory::create();
+
+
+
+for ($i=0; $i < 10; $i++) {
+  echo $faker->name;
+  echo "<br/>";
+  echo $faker->address;
+  echo "<br/>";
+  echo $faker->text;
+  echo "<br/>";
+  echo "<br/>";
+  echo "<br/>";
+  echo "<br/>";
+}
+
